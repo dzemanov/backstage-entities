@@ -35,7 +35,7 @@ apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   namespace: default
-  name: u1
+  name: user-1
 spec:
   memberOf:
     - team-b
@@ -44,7 +44,7 @@ apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   namespace: default
-  name: u2
+  name: user-2
 spec:
   memberOf:
     - team-c
@@ -53,7 +53,25 @@ apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   namespace: default
-  name: u3
+  name: user-3
+spec:
+  memberOf:
+    - team-a
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  namespace: default
+  name: rhdh-qe
+spec:
+  memberOf:
+    - team-a
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  namespace: default
+  name: rhdh-qe-6
 spec:
   memberOf:
     - team-a
