@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  namespace: marketplace-plugin-demo
+  name: all-marketplace-entities
+  description: A collection of all the marketplace entities
+spec:
+  targets:
+    - ./plugins/quay-scaffolder-actions.yaml
+    - ./packages/backstage-community-plugin-quay
