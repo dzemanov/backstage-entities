@@ -7,4 +7,4 @@ metadata:
 spec:
   targets:
     - ./plugins/quay-scaffolder-actions.yaml
-    - ./packages/backstage-community-plugin-quay
+    - ./packages/backstage-community-plugin-quay.yaml
