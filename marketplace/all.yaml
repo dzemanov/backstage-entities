@@ -6,5 +6,5 @@ metadata:
   description: A collection of all the marketplace entities
 spec:
   targets:
-    - ./plugins/quay-scaffolder-actions.yaml
+    - ./plugins/backstage-community-plugin-quay.yaml
     - ./packages/backstage-community-plugin-quay.yaml
