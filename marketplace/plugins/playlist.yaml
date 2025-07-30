@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/redhat-developer/rhdh-plugins/refs/heads/main/workspaces/marketplace/json-schema/plugins.json
+apiVersion: extensions.backstage.io/v1alpha1
+kind: Plugin
+metadata:
+  name: playlist
+  namespace: third-party
+  title: Playlist
+  description: |
+    Playlist plugin description.
+  links:
+    - title: Source Code
+      url: https://github.com/backstage/community-plugins/tree/main/workspaces/playlist
+  tags:
+    - playlist
+spec:
+  author: Third Party
+  support: production
+  lifecycle: active
+  publisher: Third Party
+  categories:
+    - Productivity
+  description: |
+    Lorem ipsum dolor.
+  packages:
+    - backstage-community-plugin-playlist-backend
+    - backstage-community-plugin-playlist

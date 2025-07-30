@@ -8,3 +8,11 @@ spec:
   targets:
     - ./plugins/backstage-community-plugin-quay.yaml
     - ./packages/backstage-community-plugin-quay.yaml
+    - ./plugins/playlist.yaml
+    - ./packages/backstage-community-plugin-playlist-backend.yaml
+    - ./packages/backstage-community-plugin-playlist.yaml
+    - ./plugins/dynatrace-commercial.yaml
+    - ./packages/dynatrace-backstage-plugin-dql-backend.yaml
+    - ./packages/dynatrace-backstage-plugin-dql.yaml
+    - ./plugins/ibm-apiconnect-backstage.yaml
+    - ./packages/apic-backstage-plugin.yaml

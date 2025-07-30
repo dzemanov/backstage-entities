@@ -1,0 +1,40 @@
+apiVersion: extensions.backstage.io/v1alpha1
+kind: Package
+metadata:
+  name: dynatrace-backstage-plugin-dql-backend
+  namespace: third-party
+  title: "@dynatrace/backstage-plugin-dql-backend"
+  links:
+    - url: https://www.dynatrace.com/
+      title: Homepage
+    - url: https://github.com/Dynatrace/backstage-plugin/issues
+      title: Issues
+    - title: Source Code
+      url: https://github.com/Dynatrace/backstage-plugin
+  annotations:
+    backstage.io/source-location: url
+      https://github.com/Dynatrace/backstage-plugin
+  tags: []
+spec:
+  packageName: "@dynatrace/backstage-plugin-dql-backend"
+  dynamicArtifact: oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/dynatrace-backstage-plugin-dql-backend:bs_1.39.1__2.2.0!dynatrace-backstage-plugin-dql-backend
+  version: 2.1.5
+  backstage:
+    role: backend-plugin
+    supportedVersions: 1.35.1
+  author: Dynatrace
+  support: production
+  lifecycle: active
+  partOf:
+    - dynatrace-commercial
+  appConfigExamples:
+    - title: Default configuration
+      content:
+        dynatrace:
+          environments:
+            - name: xxxxxxxx
+              url: https://xxxxxxxx.apps.dynatrace.com
+              tokenUrl: https://sso.dynatrace.com/sso/oauth2/token
+              accountUrn: <accountUrn>
+              clientId: <clientId>
+              clientSecret: <clientSecret>
