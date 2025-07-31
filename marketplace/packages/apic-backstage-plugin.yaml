@@ -30,8 +30,15 @@ spec:
     - title: Plugin configuration
       content:
         ibm:
-          schedule: "* * * * *"
+          schedule: '* * * * *' 
           apic:
+            - name: apic-instance-1
+              url: ${APIC_API_URL}
+              clientId: ${APIC_CLIENT_ID}
+              clientSecret: ${APIC_SECRET}
+              username: ${PORG_USERNAME}
+              password: ${PORG_PASSWORD}
+              identityProvider: 'default-idp-2' # Default Local User Registry   
             - name: apic-instance-2
               url: ${APIC_API_URL}
               clientId: ${APIC_CLIENT_ID}
