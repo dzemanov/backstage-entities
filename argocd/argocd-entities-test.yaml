@@ -1,0 +1,27 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: guestbook  # via name, no instance
+  title: Guestbook
+  annotations:
+    argocd/app-name: guestbook
+spec:
+  type: service
+  lifecycle: experimental
+  owner: guests
+  system: examples
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: basic-app
+  title: Basic App
+  annotations:
+    argocd/app-selector: app=basic-app
+    argocd/instance-name: argoInstance1, argoInstance2
+spec:
+  type: service
+  lifecycle: experimental
+  owner: guests
+  system: examples
