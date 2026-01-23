@@ -9,7 +9,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: guests
+  owner: group:development/guests
   system: examples
 ---
 apiVersion: backstage.io/v1alpha1
@@ -23,5 +23,5 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: guests
+  owner: group:development/guests
   system: examples
