@@ -2,7 +2,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: guestbook  # via name, no instance
+  name: guestbook
   title: Guestbook
   annotations:
     argocd/app-name: guestbook
@@ -18,7 +18,7 @@ metadata:
   title: Pet Clinic
   annotations:
     argocd/app-selector: app=spring-petclinic
-    argocd/instance-name: argoInstance1
+    argocd/instance-name: argoInstance1, argoInstance2
 spec:
   type: service
   lifecycle: experimental
