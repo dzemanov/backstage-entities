@@ -6,7 +6,6 @@ metadata:
   title: Guestbook
   annotations:
     argocd/app-name: guestbook
-    argocd/instance-name: argoInstance1, argoInstance2
 spec:
   type: service
   lifecycle: experimental
@@ -19,7 +18,7 @@ metadata:
   title: Pet Clinic
   annotations:
     argocd/app-selector: app=spring-petclinic
-    argocd/instance-name: argoInstance1
+    argocd/instance-name: argoInstance1, argoInstance2
 spec:
   type: service
   lifecycle: experimental
