@@ -25,7 +25,7 @@ metadata:
 spec:
   type: website
   system: janus-idp
-  owner: janus-authors
+  owner: group:development/guests
   lifecycle: production
   dependsOn:
     - resource:pgdb
