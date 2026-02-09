@@ -12,6 +12,7 @@ kind: User
 metadata:
   namespace: development
   name: guest
+  title: John Smith
 spec:
   memberOf:
     - group:development/guests
