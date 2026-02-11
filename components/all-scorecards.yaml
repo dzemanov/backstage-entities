@@ -10,5 +10,5 @@ metadata:
     jira/project-key: RHDHBUGS
 spec:
   type: service
-  owner: user:development/guest
+  owner: user:default/dzemanov
   lifecycle: production
