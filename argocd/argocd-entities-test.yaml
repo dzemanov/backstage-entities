@@ -17,7 +17,8 @@ metadata:
   name: spring-pet-clinic
   title: Pet Clinic
   annotations:
-    argocd/app-selector: app=spring-petclinic
+    argocd/app-name: spring-petclinic
+    # argocd/app-selector: app=spring-petclinic
     # argocd/instance-name: argoInstance1, argoInstance2
 spec:
   type: service
