@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: plugins-authors
+  title: Plugins Authors System
+spec:
+  owner: plugins-authors
