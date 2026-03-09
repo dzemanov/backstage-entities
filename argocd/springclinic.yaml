@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: spring-pet-clinic
+  title: Pet Clinic
+  annotations:
+    argocd/app-selector: app=spring-petclinic
+    argocd/instance-name: local, cluster
+spec:
+  type: service
+  lifecycle: experimental
+  owner: group:development/guests
