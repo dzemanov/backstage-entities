@@ -4,4 +4,4 @@ metadata:
   name: plugins-authors
   title: Plugins Authors System
 spec:
-  owner: dzemanov
+  owner: user:default/dzemanov
