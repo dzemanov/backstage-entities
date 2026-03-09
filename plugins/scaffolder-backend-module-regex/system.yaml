@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: plugins-authors
-  title: Plugins Authors
+  name: red-hat-developer-hub
+  title: Red Hat Developer Hub System
 spec:
-  owner: plugins-authors
+  owner: red-hat-team
