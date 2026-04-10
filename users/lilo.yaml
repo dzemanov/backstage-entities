@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  namespace: default
+  name: Lilo-test
+spec:
+  memberOf:
+    - test-users
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: test-users
+spec:
+  type: team
+  children: []
