@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: all-scorecards-location
+
+  description: A collection of all the scorecards
+spec:
+  targets:
+    - ./dependabot-scorecard-only.yaml
+    - ./github-scorecard-only.yaml
+    - ./jira-scorecard-only.yaml
+    - ./openssf-scorecard-only.yaml
+    - ./sonarqube-scorecard-only.yaml
+    - ./all-scorecards.yaml
+    - ./no-scorecards.yaml
