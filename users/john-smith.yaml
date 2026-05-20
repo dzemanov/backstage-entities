@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  namespace: default
+  name: developers
+spec:
+  type: team
+  children: [user:default/john-smith]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  namespace: default
+  name: john-smith
+  displayName: John Smith
+spec:
+  memberOf:
+    - group:default/developers
