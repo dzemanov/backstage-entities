@@ -15,4 +15,4 @@ metadata:
   displayName: John Smith
 spec:
   memberOf:
-    - group:default/guests
+    - group:development/guests
